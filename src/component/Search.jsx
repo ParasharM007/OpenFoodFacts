@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import logo from "./logo192.png";
 import image from "./Image_not_available.png"
 import "./Search.css"
 import loadingSpinner from "./loading.gif"
@@ -68,7 +67,8 @@ function Search({ setShowSearch }) {
       ) : (
         <div className="product-field" >
             {searchData.map((item)=>(
-          <div className="product" key={item.id} onClick={()=>navigate(`/product/${item.id}`)}>
+          <div className="product" key={item.id} onClick={()=>{navigate(`/product/${item.id}`)
+          }}>
                 <img src={item.image_url||image} alt="image" />
                 <div className="product-details">
                     <div className="product-name">

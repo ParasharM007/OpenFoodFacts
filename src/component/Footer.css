@@ -1,32 +1,28 @@
-.footer{
-    margin: 40px;
+.footer {
+  margin: 40px;
 }
-.lists{
-    display: flex;
-    justify-content: center;
-    
-
+.lists {
+  display: flex;
+  justify-content: center;
 }
-.lists ul{
-    list-style-type: none;
-    margin: 10px;
-
+.lists ul {
+  list-style-type: none;
+  margin: 10px;
 }
 
-.lists li{
-    color: rgb(78, 76, 76);
-    font-size: 16px;
-    margin: 8px;
+.lists li {
+  color: rgb(78, 76, 76);
+  font-size: 16px;
+  margin: 8px;
 }
-.lists p{
-    font-weight:normal;
-    font-size: 16px;
-    color: rgb(26, 22, 22);
-    letter-spacing: 1px;
+.lists p {
+  font-weight: normal;
+  font-size: 16px;
+  color: rgb(26, 22, 22);
+  letter-spacing: 1px;
 }
-@media (max-width:480px){
-    *{
-        font-size: 10px;
-    }
-
+@media (max-width: 480px) {
+  * {
+    font-size: 10px;
+  }
 }

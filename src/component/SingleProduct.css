@@ -1,132 +1,127 @@
 .single-product-page {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .single-product-page .left {
-    width: 600px;
-    height: 600px;
-    flex-shrink: 0;
-    margin: 50px;
+  width: 600px;
+  height: 600px;
+  flex-shrink: 0;
+  margin: 50px;
 }
 
 .single-product-page .left img {
-    width: 80%;
-    display: block;
-    border-radius: 10px;
-    height: 100%;
+  width: 80%;
+  display: block;
+  border-radius: 10px;
+  height: 100%;
 }
 
 .single-product-page .right {
-    display: flex;
-    flex-direction: column;
-    padding: 0 35px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 35px;
 }
 
 .single-product-page .right .name {
-    font-size: 24px;
-    line-height: 32px;
-    margin-bottom: 20px;
-    margin: 30px;
-    padding: 10px;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 20px;
+  margin: 30px;
+  padding: 10px;
 }
 
-.single-product-page .right .detail{
-    font-size: 24px;
-    line-height: 32px;
-    margin-bottom: 20px;
-    width: 43%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
+.single-product-page .right .detail {
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 20px;
+  width: 43%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
 }
-#nova{
-    color:white;
-    background-color: rgb(58, 48, 197);
+#nova {
+  color: white;
+  background-color: rgb(58, 48, 197);
 }
-#nutri{
-    color:white;
-    background-color: green;
+#nutri {
+  color: white;
+  background-color: green;
 }
 
 .single-product-page .right .desc {
-    font-size: 16px;
-    line-height: 24px;
-    margin-bottom: 20px;
-    color: #6b6b6b;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 20px;
+  color: #6b6b6b;
 }
-.text-bold{
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 24px;
-    margin-bottom: 20px;
-    color: #6b6b6b;
+.text-bold {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 20px;
+  color: #6b6b6b;
 }
 .single-product-page .right .divider {
-    margin: 20px 0;
-    height: 2px;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  height: 2px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
 }
-.loading{
-    display: flex;
-    justify-content: center;
-
+.loading {
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 768px) {
-    .single-product-page {
-        flex-direction: column;
-        align-items: center;
-    }
+  .single-product-page {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .single-product-page .left {
-        width: 80%;
-        height: auto;
-        margin: 20px 0;
-    }
+  .single-product-page .left {
+    width: 80%;
+    height: auto;
+    margin: 20px 0;
+  }
 
-    .single-product-page .right {
-        padding: 0 20px;
-        width: 100%;
-    }
+  .single-product-page .right {
+    padding: 0 20px;
+    width: 100%;
+  }
 
-    .single-product-page .right .detail {
-        width: 70%;
-    }
+  .single-product-page .right .detail {
+    width: 70%;
+  }
 }
-
 
 @media (max-width: 480px) {
-    .single-product-page .left {
-        width: 100%;
-        margin: 10px 0;
-    }
+  .single-product-page .left {
+    width: 100%;
+    margin: 10px 0;
+  }
 
-    .single-product-page .left img {
-        width: 100%;
-    }
+  .single-product-page .left img {
+    width: 100%;
+  }
 
-    .single-product-page .right {
-        padding: 0 15px;
-        width: 100%;
-    }
+  .single-product-page .right {
+    padding: 0 15px;
+    width: 100%;
+  }
 
-    .single-product-page .right .name {
-        font-size: 18px;
-        margin: 10px 0;
-    }
+  .single-product-page .right .name {
+    font-size: 18px;
+    margin: 10px 0;
+  }
 
-    .single-product-page .right .detail {
-        font-size: 18px;
-        width: 90%;
-    }
+  .single-product-page .right .detail {
+    font-size: 18px;
+    width: 90%;
+  }
 
-    .single-product-page .right .desc {
-        font-size: 14px;
-    }
+  .single-product-page .right .desc {
+    font-size: 14px;
+  }
 }
-
-
-
