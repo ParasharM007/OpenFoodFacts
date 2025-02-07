@@ -18,7 +18,7 @@ function Products({ category, pageSize, page }) {
                 `https://world.openfoodfacts.org/cgi/search.pl?search_terms={name}&json=true&page=${page}&page_size=${pageSize}`
               ))
             : (response = await fetch(
-                `/cgi/search.pl?search_terms=${category}&json=true&page=${page}&page_size=${pageSize}`
+                `https://world.openfoodfacts.org/cgi/search.pl?search_terms=${category}&json=true&page=${page}&page_size=${pageSize}`
               ));
         }
         const data = await response.json();
