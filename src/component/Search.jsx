@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import image from "./Image_not_available.png"
 import "./Search.css"
 import loadingSpinner from "./loading.gif"
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Search({ setShowSearch }) {
   const [query, setQuery] = useState("");
@@ -33,7 +33,7 @@ function Search({ setShowSearch }) {
 
    { 
     
-    const response=await fetch(`/cgi/search.pl?search_terms=${query}&json=true`)
+    const response=await fetch(`https://world.openfoodfacts.org/cgi/search.pl?search_terms=${query}&json=true`)
     const searchdata=await response.json();
     const tempdata= searchdata.products;
     setSearchData(tempdata);

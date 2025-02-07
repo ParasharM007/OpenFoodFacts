@@ -12,7 +12,7 @@ function SingleProduct() {
     const fetchData = async () => {
       try {
         setLoading(true);
-        let response = await fetch(`/api/v0/product/${id}.json`);
+        let response = await fetch(`https://world.openfoodfacts.org/api/v0/product/${id}.json`);
         response = await response.json();
         let tempdata = response.product;
         setProduct(tempdata);
@@ -30,7 +30,7 @@ function SingleProduct() {
       {" "}
       {loading ? (
         <div className="loading">
-          <img src={loadingSpinner} />
+          <img src={loadingSpinner} alt="img"/>
         </div>
       ) : (
         <div className="single-product-page">
@@ -53,12 +53,6 @@ function SingleProduct() {
                 ))
               }
             </span>
-            <button
-              className="url"
-              onClick={() => window.open(product?.url, "_blank")}
-            >
-              Click to explore...
-            </button>
 
             <span className="divider" />
             <div className="info-product">
